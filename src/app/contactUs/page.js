@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Contact Techsnostalgia: Get in Touch with Us",
+  title: "Contact The Vegan Vibrance | Get in Touch Today",
   description:
-    "Want to share your favorite tech memories or ask a question? Contact Techsnos Talgia today and let’s chat about the technology that defined an era.",
+    "Have questions or feedback? Contact The Vegan Vibrance team today! We’re here to help you on your plant-based journey.",
 };
 import ContactUs from "@/components/ContactUs/ContactUs";
 

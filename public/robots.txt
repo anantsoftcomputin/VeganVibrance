@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://technostalgia.com/
+Host: https://veganvibrance.com/
 
 # Sitemaps
-Sitemap: https://technostalgia.com/sitemap.xml
+Sitemap: https://veganvibrance.com/sitemap.xml

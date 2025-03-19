@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Techsnostalgia: Celebrating the Classics of Outdated Technology",
+  title: "The Vegan Vibrance | Healthy, Delicious & Sustainable Vegan Recipes",
   description:
-    "Join us at Techsnostalgia as we revisit the nostalgic world of vintage tech. Relive the golden era of outdated gadgets and explore the stories behind them.",
+    "Your ultimate resource for vegan recipes, nutrition tips, and eco-conscious living. The Vegan Vibrance helps you live a healthier, more vibrant life.",
 };
 
 import Hero from "@/components/Hero/Hero";

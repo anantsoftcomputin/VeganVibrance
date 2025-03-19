@@ -4,7 +4,7 @@ import CategoriesBlogs from "@/components/Categories/CategoriesBlogs";
 export const generateMetadata = async ({ params }) => {
   try {
     const { data: category } = await ajaxCall(
-      `/category-slug/?site_domain=technostalgia.com&category_slug=${params?.slug}/`,
+      `/category-slug/?site_domain=veganvibrance.com&category_slug=${params?.slug}/`,
       { method: "GET" }
     );
     return {

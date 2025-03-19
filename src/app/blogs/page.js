@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Techsnostalgia Blog | Reliving the Glory of Classic Tech",
+  title: "The Vegan Vibrance Blog | Latest Vegan Recipes & Wellness Tips",
   description:
-    "Explore the Techsnostalgia blog for deep dives into retro gadgets, vintage electronics, and the nostalgic allure of outdated technology.",
+    "Stay updated with our vegan blog featuring delicious recipes, health tips, and sustainable living ideas. Your go-to resource for plant-based living!",
 };
 import Blog from "@/components/Blogs/Blog";
 

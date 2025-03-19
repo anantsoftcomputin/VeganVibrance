@@ -21,12 +21,12 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-2">
               <img
-                src="/technostalgia.png"
-                alt="Technostalgia"
+                src="/veganvibrance.png"
+                alt="Veganvibrance"
                 className="h-8 w-auto"
               />
               <span className="text-2xl font-bold text-white transition-colors">
-                Technostalgia
+                Veganvibrance
               </span>
             </Link>
           </div>

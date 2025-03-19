@@ -81,7 +81,7 @@ export default function BlogDetails({ slug }) {
       if (!category) return;
       try {
         const response = await ajaxCall(
-          `/posts-category/?site_domain=technostalgia.com&category_name=${category}`,
+          `/posts-category/?site_domain=veganvibrance.com&category_name=${category}`,
           { method: "GET" }
         );
         setRelatedBlogs(response.data.results);

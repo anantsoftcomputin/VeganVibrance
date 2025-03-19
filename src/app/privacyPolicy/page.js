@@ -18,12 +18,12 @@ export default function PrivacyPolicy() {
               </div>
               <div className="p-6">
                 <p className="text-gray-600">
-                  Welcome to technostalgia.com (hereinafter referred to as "the
+                  Welcome to veganvibrance.com (hereinafter referred to as "the
                   Site," "we," "us," or "our"). We are committed to protecting
                   your privacy and ensuring the security of your personal
                   information. This Privacy Policy outlines how we collect, use,
                   disclose, and safeguard your information when you visit our
-                  Site. By using technostalgia.com, you agree to the terms of this
+                  Site. By using veganvibrance.com, you agree to the terms of this
                   Privacy Policy.
                 </p>
               </div>
@@ -353,9 +353,9 @@ export default function PrivacyPolicy() {
                   please contact us:
                 </p>
                 <p className="mt-2 text-purple-600">
-                  Email: technostalgia@gmail.com
+                  Email: veganvibrance@gmail.com
                   <br />
-                  Contact: Available on technostalgia.com
+                  Contact: Available on veganvibrance.com
                 </p>
               </div>
             </div>

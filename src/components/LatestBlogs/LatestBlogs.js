@@ -17,7 +17,7 @@ const LatestBlogs = () => {
     const fetchBlogs = async () => {
       try {
         const response = await ajaxCall(
-          "/posts-latest/?site_domain=technostalgia.com",
+          "/posts-latest/?site_domain=veganvibrance.com",
           { method: "GET" }
         );
         setBlogs(response.data.results);
@@ -35,7 +35,7 @@ const LatestBlogs = () => {
     const fetchCategories = async () => {
       try {
         const response = await ajaxCall(
-          "/get-categories/?site=technostalgia.com	",
+          "/get-categories/?site=veganvibrance.com	",
           { method: "GET" }
         );
         setCategories((prev) => [
