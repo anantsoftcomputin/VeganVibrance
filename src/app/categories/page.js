@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Explore Classic Tech Categories | Techsnostalgia",
+  title: "Vegan Recipes | Easy Plant-Based Meals for Every Occasion",
   description:
-    "Dive into the world of vintage gadgets, retro gaming, and nostalgic tech. Explore different categories that celebrate the golden age of technology at Techsnostalgia.",
+    "Browse our collection of vegan recipes, from quick meals to gourmet dishes. Perfect for every occasion and skill level!",
 };
 import Categories from "@/components/Categories/Categories";
 

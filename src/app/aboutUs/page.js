@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "About Techsnostalgia: A Journey Through the Tech of Yesteryear",
+  title: "About The Vegan Vibrance | Our Mission & Story",
   description:
-    "At Techsnostalgia, we celebrate the past by reminiscing about the technology that once shaped our world. Discover how we honor vintage tech and its enduring legacy.",
+    "Learn about The Vegan Vibrance and our mission to inspire vibrant, plant-based living. Discover our story and join our community!",
 };
 
 import AboutUs from "@/components/AboutUs/AboutUs";

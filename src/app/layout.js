@@ -7,10 +7,10 @@ import AdBanner from "@/components/AdBanner/AdBanner";
 export const metadata = {
   icons: {
     icon: [
-      { url: "/technostalgia.png" },
-      { url: "/technostalgia.png", sizes: "32x32", type: "image/png" },
+      { url: "/veganvibrance.png" },
+      { url: "/veganvibrance.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: { url: "/ technostalgia.png", sizes: "180x180", type: "image/png" },
+    apple: { url: "/veganvibrance.png", sizes: "180x180", type: "image/png" },
   },
 };
 

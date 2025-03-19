@@ -33,7 +33,7 @@ export default function Blog() {
     const fetchBlogs = async () => {
       try {
         const response = await ajaxCall(
-          `/posts/?site_domain=technostalgia.com&page=${page}`,
+          `/posts/?site_domain=veganvibrance.com&page=${page}`,
           { method: "GET" }
         );
         if (page === 1) {
@@ -61,7 +61,7 @@ export default function Blog() {
     const fetchCategories = async () => {
       try {
         const response = await ajaxCall(
-          "/get-categories/?site=technostalgia.com",
+          "/get-categories/?site=veganvibrance.com",
           { method: "GET" }
         );
         setCategories((prev) => [

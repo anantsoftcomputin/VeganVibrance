@@ -18,11 +18,11 @@ export default function CookiesPolicy() {
               </div>
               <div className="p-6">
                 <p className="text-gray-600">
-                  technostalgia.com (hereinafter referred to as "the Site," "we,"
-                  "us," or "our") uses cookies and other similar technologies to
-                  enhance your browsing experience. This Cookie Policy explains
-                  what cookies are, how we use them, and your choices regarding
-                  cookies.
+                  veganvibrance.com (hereinafter referred to as "the Site,"
+                  "we," "us," or "our") uses cookies and other similar
+                  technologies to enhance your browsing experience. This Cookie
+                  Policy explains what cookies are, how we use them, and your
+                  choices regarding cookies.
                 </p>
               </div>
             </div>
@@ -218,11 +218,11 @@ export default function CookiesPolicy() {
                   Conditions, please contact us at:
                 </p>
                 <p className="mt-2 text-purple-600">
-                  Email: support@technostalgia.com
+                  Email: support@veganvibrance.com
                   <br />
                   Address: Alkapuri, Vadodara, Gujarat, India 390007.
                   <br />
-                  Contact: Available on technostalgia.com
+                  Contact: Available on veganvibrance.com
                 </p>
               </div>
             </div>

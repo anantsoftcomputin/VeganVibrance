@@ -13,7 +13,7 @@ const TrendingBlogs = () => {
     const fetchTrendingBlogs = async () => {
       try {
         const response = await ajaxCall(
-          "/posts-popular/?site_domain=technostalgia.com",
+          "/posts-popular/?site_domain=veganvibrance.com",
           { method: "GET" }
         );
         setTrendingBlogs(response.data.results);
