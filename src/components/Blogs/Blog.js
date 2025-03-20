@@ -33,7 +33,7 @@ export default function Blog() {
     const fetchBlogs = async () => {
       try {
         const response = await ajaxCall(
-          `/posts/?site_domain=veganvibrance.com&page=${page}`,
+          `/posts/?site_domain=theveganvibrance.com&page=${page}`,
           { method: "GET" }
         );
         if (page === 1) {
@@ -61,7 +61,7 @@ export default function Blog() {
     const fetchCategories = async () => {
       try {
         const response = await ajaxCall(
-          "/get-categories/?site=veganvibrance.com",
+          "/get-categories/?site=theveganvibrance.com",
           { method: "GET" }
         );
         setCategories((prev) => [
@@ -261,7 +261,7 @@ export default function Blog() {
                 </div>
 
                 <div className="md:w-1/2 p-6 md:p-8 bg-white flex flex-col">
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 group-hover:text-purple-600">
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 hover:text-purple-600">
                     {featuredBlog.title}
                   </h2>
                   <p className="text-gray-600 text-lg mb-4 line-clamp-3">

@@ -20,7 +20,7 @@ export default function CategoriesBlogs({ slug }) {
       if (!slug) return;
       try {
         const response = await ajaxCall(
-          `/posts-category/?site_domain=veganvibrance.com&category_slug=${slug}`,
+          `/posts-category/?site_domain=theveganvibrance.com&category_slug=${slug}`,
           { method: "GET" }
         );
         setRelatedBlogs(response.data.results);
