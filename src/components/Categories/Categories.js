@@ -22,7 +22,7 @@ export default function Categories() {
     const fetchCategories = async () => {
       try {
         const response = await ajaxCall(
-          "/get-categories/?site=veganvibrance.com",
+          "/get-categories/?site=theveganvibrance.com",
           { method: "GET" }
         );
         setCategories(

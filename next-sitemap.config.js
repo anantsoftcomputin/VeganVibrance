@@ -1,7 +1,7 @@
 const { default: axios } = require("axios");
 
 module.exports = {
-  siteUrl: "https://veganvibrance.com/",
+  siteUrl: "https://theveganvibrance.com/",
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   sitemapSize: 5000,
@@ -37,12 +37,12 @@ module.exports = {
   additionalPaths: async () => {
     try {
       const blogResponse = await axios.get(
-        "https://peekly.in/blog/api/all-posts/?site_domain=veganvibrance.com"
+        "https://peekly.in/blog/api/all-posts/?site_domain=theveganvibrance.com"
       );
       const blogPosts = blogResponse.data.results;
 
       const categoryResponse = await axios.get(
-        "https://peekly.in/blog/api/get-categories/?site=veganvibrance.com"
+        "https://peekly.in/blog/api/get-categories/?site=theveganvibrance.com"
       );
       const categories = categoryResponse.data.results;
 

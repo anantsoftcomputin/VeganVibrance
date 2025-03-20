@@ -75,9 +75,9 @@ const Footer = () => {
               lifestyle.
             </p>
             <div className="flex space-x-4 mt-6">
-              {socialLinks.map(({ name, icon: Icon, href }) => (
+              {socialLinks.map(({ name, icon: Icon, href }, index) => (
                 <a
-                  key={href}
+                  key={index}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"

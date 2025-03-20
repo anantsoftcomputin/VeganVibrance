@@ -3,15 +3,9 @@ import ResponsiveBlogContainer from "@/components/BlogDetails/ResponsiveBlogCont
 
 export const generateMetadata = async ({ params }) => {
   try {
-    const resolvedParams = await params;
-    const slug = resolvedParams?.slug;
-    if (!slug) {
-      return {
-        title: "Blog",
-        description: "Techsnostalgia Blog",
-      };
-    }
-    const { data: blog } = await ajaxCall(`/post/${slug}/`, { method: "GET" });
+    const { data: blog } = await ajaxCall(`/post/${params?.slug}/`, {
+      method: "GET",
+    });
     return {
       title: blog.meta_title,
       description: blog.meta_description,
@@ -38,10 +32,5 @@ export const generateMetadata = async ({ params }) => {
 };
 
 export default async function BlogDetail({ params }) {
-  const resolvedParams = await params;
-  const slug = resolvedParams?.slug;
-  if (!slug) {
-    return <div>Blog not found</div>;
-  }
-  return <ResponsiveBlogContainer slug={slug} />;
+  return <ResponsiveBlogContainer slug={params?.slug} />;
 }

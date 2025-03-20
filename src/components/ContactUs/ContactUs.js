@@ -220,10 +220,10 @@ const ContactUs = () => {
                     <div>
                       <p className="text-gray/70 text-sm">Email us at</p>
                       <a
-                        href="mailto:support@veganvibrance.com"
+                        href="mailto:support@theveganvibrance.com"
                         className="text-gray-700 hover:underline"
                       >
-                        support@veganvibrance.com
+                        support@theveganvibrance.com
                       </a>
                     </div>
                   </div>

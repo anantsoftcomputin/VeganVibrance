@@ -17,7 +17,7 @@ const LatestBlogs = () => {
     const fetchBlogs = async () => {
       try {
         const response = await ajaxCall(
-          "/posts-latest/?site_domain=veganvibrance.com",
+          "/posts-latest/?site_domain=theveganvibrance.com",
           { method: "GET" }
         );
         setBlogs(response.data.results);
@@ -35,12 +35,12 @@ const LatestBlogs = () => {
     const fetchCategories = async () => {
       try {
         const response = await ajaxCall(
-          "/get-categories/?site=veganvibrance.com	",
+          "/get-categories/?site=theveganvibrance.com	",
           { method: "GET" }
         );
         setCategories((prev) => [
           "All",
-          ...response.data.results.map((category) => category.name),
+          ...response.data?.results?.map((category) => category.name),
         ]);
       } catch (error) {
         console.log("error", error);
