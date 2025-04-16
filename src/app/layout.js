@@ -1,8 +1,7 @@
 import "./globals.css";
+import Script from "next/script";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import Script from "next/script";
-import AdBanner from "@/components/AdBanner/AdBanner";
 
 export const metadata = {
   icons: {
@@ -35,15 +34,23 @@ export default function RootLayout({ children }) {
               gtag('config', 'G-T02TC97Y4Y');
             `,
           }}
-        />
+        ></Script>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2283636579212292"
+          crossorigin="anonymous"
+        ></Script>
         <meta
           name="google-site-verification"
           content="-vEQwCv3N-7CYJlks9qASX9zmgZ-7sbhBPfH4JKkxT4"
-        />
+        ></meta>
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-2283636579212292"
+        ></meta>
       </head>
       <body>
         <Header />
-        <AdBanner />
         {children}
         <Footer />
       </body>
