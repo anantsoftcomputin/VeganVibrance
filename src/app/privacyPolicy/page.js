@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
         <div className="absolute inset-0 bg-grid-white/[0.05]" />
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
               Privacy Policy
             </h1>
           </div>
@@ -23,8 +23,8 @@ export default function PrivacyPolicy() {
                   your privacy and ensuring the security of your personal
                   information. This Privacy Policy outlines how we collect, use,
                   disclose, and safeguard your information when you visit our
-                  Site. By using theveganvibrance.com, you agree to the terms of this
-                  Privacy Policy.
+                  Site. By using theveganvibrance.com, you agree to the terms of
+                  this Privacy Policy.
                 </p>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function PrivacyPolicy() {
                   </ul>
 
                   <h3 className="font-semibold text-gray-900 mt-4">
-                    Comments :    
+                    Comments :
                   </h3>
                   <ul className="list-disc list-inside text-gray-600 space-y-2">
                     <li>
@@ -352,8 +352,8 @@ export default function PrivacyPolicy() {
                   For any questions or concerns about this Privacy Policy,
                   please contact us:
                 </p>
-                <p className="mt-2 text-purple-600">
-                  Email: veganvibrance@gmail.com
+                <p className="mt-2 text-emerald-600">
+                  Email: support@theveganvibrance.com
                   <br />
                   Contact: Available on theveganvibrance.com
                 </p>
