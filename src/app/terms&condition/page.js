@@ -5,7 +5,7 @@ export default function TermsAndConditions() {
         <div className="absolute inset-0 bg-grid-white/[0.05]" />
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
               Terms and Conditions
             </h1>
           </div>
@@ -19,10 +19,11 @@ export default function TermsAndConditions() {
               </div>
               <div className="p-6">
                 <p className="text-gray-600">
-                  By accessing and using theveganvibrance.com (hereinafter referred to
-                  as "the Site," "we," "us," or "our"), you agree to comply with
-                  and be bound by these Terms and Conditions. If you do not
-                  agree with any part of these terms, you must not use our Site.
+                  By accessing and using theveganvibrance.com (hereinafter
+                  referred to as "the Site," "we," "us," or "our"), you agree to
+                  comply with and be bound by these Terms and Conditions. If you
+                  do not agree with any part of these terms, you must not use
+                  our Site.
                 </p>
               </div>
             </div>
@@ -40,10 +41,10 @@ export default function TermsAndConditions() {
                   </h3>
                   <ul className="list-disc list-inside text-gray-600 space-y-2">
                     <li>
-                      All content on theveganvibrance.com, including but not limited
-                      to text, images, graphics, logos, and software, is the
-                      property of theveganvibrance.com or its licensors and is
-                      protected by copyright and other intellectual property
+                      All content on theveganvibrance.com, including but not
+                      limited to text, images, graphics, logos, and software, is
+                      the property of theveganvibrance.com or its licensors and
+                      is protected by copyright and other intellectual property
                       laws.
                     </li>
                   </ul>
@@ -171,16 +172,15 @@ export default function TermsAndConditions() {
               </div>
               <div className="p-6">
                 <div className="space-y-4">
-                  <h3 className="font-semibold text-gray-900">
-                    Limitation :
-                  </h3>
+                  <h3 className="font-semibold text-gray-900">Limitation :</h3>
                   <ul className="list-disc list-inside text-gray-600 space-y-2">
                     <li>
-                      To the fullest extent permitted by law, theveganvibrance.com and
-                      its affiliates, officers, directors, employees, and agents
-                      shall not be liable for any direct, indirect, incidental,
-                      consequential, or punitive damages arising out of or
-                      related to your use of our Site.
+                      To the fullest extent permitted by law,
+                      theveganvibrance.com and its affiliates, officers,
+                      directors, employees, and agents shall not be liable for
+                      any direct, indirect, incidental, consequential, or
+                      punitive damages arising out of or related to your use of
+                      our Site.
                     </li>
                   </ul>
                   <h3 className="font-semibold text-gray-900 mt-4">
@@ -188,10 +188,10 @@ export default function TermsAndConditions() {
                   </h3>
                   <ul className="list-disc list-inside text-gray-600 space-y-2">
                     <li>
-                      You agree to indemnify and hold theveganvibrance.com harmless
-                      from any claims, damages, or expenses arising out of your
-                      use of our Site or your violation of these Terms and
-                      Conditions.
+                      You agree to indemnify and hold theveganvibrance.com
+                      harmless from any claims, damages, or expenses arising out
+                      of your use of our Site or your violation of these Terms
+                      and Conditions.
                     </li>
                   </ul>
                 </div>
@@ -216,9 +216,7 @@ export default function TermsAndConditions() {
                       the new terms on this page.
                     </li>
                   </ul>
-                  <h3 className="font-semibold text-gray-900 mt-4">
-                    Review :
-                  </h3>
+                  <h3 className="font-semibold text-gray-900 mt-4">Review :</h3>
                   <ul className="list-disc list-inside text-gray-600 space-y-2">
                     <li>
                       You are advised to review these Terms and Conditions
@@ -239,9 +237,7 @@ export default function TermsAndConditions() {
               </div>
               <div className="p-6">
                 <div className="space-y-4">
-                  <h3 className="font-semibold text-gray-900">
-                    Termination :
-                  </h3>
+                  <h3 className="font-semibold text-gray-900">Termination :</h3>
                   <ul className="list-disc list-inside text-gray-600 space-y-2">
                     <li>
                       We may terminate your access to our Site at any time,
@@ -308,7 +304,7 @@ export default function TermsAndConditions() {
                   If you have any questions or concerns about these Terms and
                   Conditions, please contact us at:
                 </p>
-                <p className="mt-2 text-purple-600">
+                <p className="mt-2 text-emerald-600">
                   Email: support@theveganvibrance.com
                   <br />
                   Address: Alkapuri, Vadodara, Gujarat, India 390007.
@@ -327,8 +323,8 @@ export default function TermsAndConditions() {
               <div className="p-6">
                 <p className="text-gray-600">
                   These Terms and Conditions constitute the entire agreement
-                  between you and theveganvibrance.com regarding your use of our Site,
-                  superseding any prior agreements.
+                  between you and theveganvibrance.com regarding your use of our
+                  Site, superseding any prior agreements.
                 </p>
               </div>
             </div>

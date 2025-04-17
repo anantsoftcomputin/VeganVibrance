@@ -55,35 +55,32 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white relative">
+    <footer className="bg-green-100 text-gray-700 relative">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <Link
-              href="/"
-              className="flex items-center space-x-2 text-2xl font-bold text-white"
-            >
+            <Link href="/" className="flex items-center space-x-2">
               <img
                 src="/veganvibrance.png"
                 alt="Veganvibrance"
                 className="h-8 w-auto"
               />
-              <span className="text-xl md:inline-block ml-2">
+              <span className="text-xl font-bold md:inline-block ml-2">
                 Veganvibrance
               </span>
             </Link>
-            <p className="mt-4 text-gray-400">
-              Empowering mindful technology use for a balanced digital
-              lifestyle.
+            <p className="mt-4 text-gray-600">
+              Helping you cultivate a vibrant, plant-powered life through
+              wholesome nutrition and mindful eating.
             </p>
             <div className="flex space-x-4 mt-6">
-              {socialLinks.map(({ name, icon: Icon, href }, index) => (
+              {socialLinks.map(({ name, icon: Icon, href }) => (
                 <a
-                  key={index}
+                  key={href}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-700 hover:text-green-600 transition-colors duration-200"
                 >
                   <Icon className="h-6 w-6" />
                   <span className="sr-only">{name}</span>
@@ -93,7 +90,7 @@ const Footer = () => {
           </div>
           {Object.entries(footerLinks).map(([section, links], index) => (
             <div key={index}>
-              <h3 className="text-lg font-semibold mb-4 capitalize">
+              <h3 className="text-lg font-semibold mb-4 capitalize text-gray-800">
                 {section}
               </h3>
               <ul className="space-y-2">
@@ -101,7 +98,7 @@ const Footer = () => {
                   <li key={href}>
                     <Link
                       href={href}
-                      className="text-gray-400 hover:text-white transition-colors"
+                      className="text-gray-600 hover:text-green-600 transition-colors duration-200"
                     >
                       {name}
                     </Link>
@@ -111,8 +108,8 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="border-t border-gray-800 pt-8 mt-8 text-center">
-          <p className="text-gray-400 text-sm">
+        <div className="border-t border-green-200 pt-8 mt-8 text-center">
+          <p className="text-gray-600 text-sm">
             {currentYear ? (
               <div>
                 © {currentYear} Veganvibrance. All rights reserved | Design &
@@ -121,7 +118,7 @@ const Footer = () => {
                   href="https://anantsoftcomputing.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white font-semibold hover:text-gray-400 transition-colors duration-300"
+                  className="text-gray-700 font-semibold hover:text-green-600 transition-colors duration-300"
                 >
                   Anant Soft Computing
                 </a>
@@ -135,7 +132,7 @@ const Footer = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 p-3 rounded-full bg-purple-600 text-white shadow-lg transition-all duration-300 hover:bg-purple-700"
+          className="fixed bottom-8 right-8 p-3 rounded-full bg-green-600 text-white shadow-lg transition-all duration-300 hover:bg-green-700"
         >
           <ArrowUpCircle className="h-6 w-6" />
         </button>

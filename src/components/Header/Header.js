@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -12,10 +13,11 @@ const navigation = [
 ];
 
 const Header = () => {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gray-900 text-white">
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-green-50 text-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
@@ -23,28 +25,37 @@ const Header = () => {
               <img
                 src="/veganvibrance.png"
                 alt="Veganvibrance"
-                className="h-8 w-auto"
+                className="h-10 w-auto"
               />
-              <span className="text-2xl font-bold text-white transition-colors">
+              <span className="text-2xl font-bold text-green-700 transition-colors">
                 Veganvibrance
               </span>
             </Link>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
-            {navigation.map((item, index) => (
-              <Link
-                key={index}
-                href={item.href}
-                className="text-gray-400 hover:text-white font-medium transition-colors"
-              >
-                {item.name}
-              </Link>
-            ))}
+            {navigation.map((item, index) => {
+              const isActive =
+                pathname === item.href ||
+                (item.href !== "/" && pathname.startsWith(item.href));
+              return (
+                <Link
+                  key={index}
+                  href={item.href}
+                  className={`font-medium transition-colors duration-200 ${
+                    isActive
+                      ? "text-green-700 font-semibold border-b-2 border-green-700"
+                      : "text-gray-700 hover:text-green-700"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
           </nav>
           <div className="flex md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-md text-white transition-colors"
+              className="p-2 rounded-md text-gray-700 hover:text-green-700 transition-colors duration-200"
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -55,18 +66,27 @@ const Header = () => {
           </div>
         </div>
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-800">
+          <div className="md:hidden py-4 border-t border-green-100">
             <div className="flex flex-col space-y-4">
-              {navigation.map((item, index) => (
-                <Link
-                  key={item.name + index}
-                  href={item.href}
-                  className="text-gray-400 hover:text-white font-medium block px-3 py-2 rounded-md hover:bg-gray-800 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navigation.map((item, index) => {
+                const isActive =
+                  pathname === item.href ||
+                  (item.href !== "/" && pathname.startsWith(item.href));
+                return (
+                  <Link
+                    key={item.name + index}
+                    href={item.href}
+                    className={`block px-3 py-2 rounded-md transition-colors duration-200 ${
+                      isActive
+                        ? "text-green-700 font-semibold bg-green-100"
+                        : "text-gray-700 hover:text-green-700 hover:bg-green-100"
+                    }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}

@@ -1,83 +1,81 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import {
-  Target,
-  Heart,
-  Wrench,
-  Clock,
+  Utensils,
+  Leaf,
+  HeartPulse,
   Users,
-  Globe,
-  BookOpen,
-  MessageCircle,
+  Sprout,
+  CalendarCheck,
+  Sun,
+  ChefHat,
 } from "lucide-react";
 import Link from "next/link";
 
 const stats = [
   {
-    number: "10K+",
-    label: "Community Members",
-    icon: <Users className="h-6 w-6 text-purple-600" />,
-    bgColor: "bg-purple-100",
+    number: "25K+",
+    label: "Plant-Powered Members",
+    icon: <Leaf className="h-6 w-6 text-green-600" />,
+    bgColor: "bg-green-100",
   },
   {
-    number: "500+",
-    label: "Success Stories",
-    icon: <Heart className="h-6 w-6 text-purple-600" />,
-    bgColor: "bg-purple-100",
+    number: "1M+",
+    label: "Meals Shared",
+    icon: <Utensils className="h-6 w-6 text-green-600" />,
+    bgColor: "bg-green-100",
+  },
+  {
+    number: "100+",
+    label: "Nutrition Guides",
+    icon: <HeartPulse className="h-6 w-6 text-green-600" />,
+    bgColor: "bg-green-100",
   },
   {
     number: "50+",
-    label: "Expert Contributors",
-    icon: <BookOpen className="h-6 w-6 text-purple-600" />,
-    bgColor: "bg-purple-100",
-  },
-  {
-    number: "15+",
-    label: "Digital Detox Tools",
-    icon: <Wrench className="h-6 w-6 text-purple-600" />,
-    bgColor: "bg-purple-100",
+    label: "Seasonal Recipes",
+    icon: <Sprout className="h-6 w-6 text-green-600" />,
+    bgColor: "bg-green-100",
   },
 ];
 
 const resources = [
   {
-    icon: Heart,
-    title: "Success Stories",
+    icon: ChefHat,
+    title: "Vegan Recipe Collections",
     description:
-      "Real stories from individuals who have transformed their lives through digital detox.",
+      "Curated plant-based recipes for every occasion and dietary need.",
   },
   {
-    icon: Wrench,
-    title: "Expert Tips & Guides",
-    description:
-      "Professional guidance and strategies for managing your digital habits effectively.",
+    icon: HeartPulse,
+    title: "Nutrition Masterclasses",
+    description: "Science-backed guides to thriving on a plant-based diet.",
   },
   {
-    icon: Clock,
-    title: "Digital Detox Tools",
-    description:
-      "Practical tools and challenges to help you unplug and maintain a healthy balance.",
+    icon: CalendarCheck,
+    title: "Meal Planning Systems",
+    description: "Structured programs to simplify your plant-powered kitchen.",
   },
 ];
 
 const values = [
   {
-    icon: Target,
-    title: "Mindful Technology Use",
+    icon: Leaf,
+    title: "Whole Food Nourishment",
     description:
-      "We promote conscious and balanced engagement with digital tools to enhance life without letting technology control it.",
+      "We celebrate food in its most vibrant, nutrient-dense form for optimal health.",
   },
   {
-    icon: Globe,
-    title: "Digital Wellness",
+    icon: Sun,
+    title: "Sustainable Eating",
     description:
-      "Creating awareness about how technology affects mental health and providing practical solutions for a healthier relationship with devices.",
+      "Our approach connects personal wellness with planetary wellbeing.",
   },
   {
-    icon: MessageCircle,
-    title: "Community Support",
+    icon: Users,
+    title: "Inclusive Community",
     description:
-      "Building a supportive community where individuals can share experiences and strategies for maintaining digital balance.",
+      "Join thousands discovering the joy and benefits of plant-based living.",
   },
 ];
 
@@ -90,28 +88,29 @@ const AboutUs = () => {
 
   return (
     <main className="pt-12 min-h-screen bg-gray-50">
-      <section className="relative py-20 bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-900">
+      <section className="relative py-20 bg-green-100">
         <div className="absolute inset-0 bg-grid-white/[0.05]" />
         <div className="relative container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Welcome to Veganvibrance
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Cultivate Vibrant Health
             </h1>
-            <p className="text-xl text-purple-100 mb-8">
-              Your sanctuary for rediscovering balance in the digital age. We
-              empower individuals to take control of their screen time and
-              cultivate healthier, more fulfilling lives offline.
+            <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+              At Vegan Vibrance, we're growing a movement of plant-powered
+              living - helping people discover the joy, health, and
+              sustainability of whole food nutrition.
             </p>
           </div>
         </div>
       </section>
+
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div
                 key={stat.label + index}
-                className={`text-center p-6 bg-purple-50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${
+                className={`text-center p-6 bg-green-50 rounded-xl border border-green-100 shadow-sm hover:shadow-md transition-all duration-500 hover:-translate-y-2 ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-10"
@@ -123,7 +122,7 @@ const AboutUs = () => {
                 >
                   {stat.icon}
                 </div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">
+                <div className="text-3xl font-bold text-green-600 mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-800 font-medium">{stat.label}</div>
@@ -132,7 +131,8 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-purple-100">
+
+      <section className="py-20 bg-green-100">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div
@@ -142,26 +142,24 @@ const AboutUs = () => {
                   : "opacity-0 -translate-x-10"
               }`}
             >
-              <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent mb-6">
-                Our Mission
+              <h3 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                Our Philosophy
               </h3>
               <p className="text-gray-800 text-lg mb-8">
-                At Veganvibrance, we are passionate about helping people achieve
-                harmony between their digital and real lives. Through insightful
-                content, practical strategies, and inspiring stories, we guide
-                our community on a journey of mindfulness, productivity, and
-                self-discovery.
+                In a world of processed foods, we help you reconnect with
+                nature's nourishment. Through research and recipes, we empower
+                you to:
               </p>
               <div className="space-y-6">
                 {values.map((value, index) => (
                   <div key={index} className="flex gap-4 items-start">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center">
-                        <value.icon className="h-6 w-6 text-purple-600" />
+                      <div className="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center">
+                        <value.icon className="h-6 w-6 text-green-600" />
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-purple-600 mb-2">
+                      <h3 className="text-xl font-semibold text-green-600 mb-2">
                         {value.title}
                       </h3>
                       <p className="text-gray-600">{value.description}</p>
@@ -179,50 +177,47 @@ const AboutUs = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800"
-                  alt="Team Meeting"
+                  src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                  alt="Vibrant plant-based meals"
                   className="w-full h-auto rounded-2xl object-cover transition-all duration-700 hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/50 to-transparent opacity-60"></div>
               </div>
-              <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-purple-200 rounded-2xl -z-10 opacity-50 blur-lg"></div>
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-indigo-200 rounded-full -z-10 opacity-50 blur-lg"></div>
             </div>
           </div>
         </div>
       </section>
+
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="text-center text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent mb-4">
-            What We Offer
+          <h2 className="text-center text-4xl md:text-5xl font-bold text-green-800 mb-4">
+            Our Plant-Based Resources
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            Explore our resources designed to help you build a healthier
-            relationship with technology
+            Practical tools and knowledge to help you thrive on a vegan diet
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {resources.map((resource, index) => (
               <div
                 key={index}
-                className={`bg-purple-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-purple-100 ${
+                className={`bg-green-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-green-100 ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-10"
                 }`}
                 style={{ transitionDelay: `${index * 100 + 300}ms` }}
               >
-                <div className="w-14 h-14 rounded-lg bg-purple-100 flex items-center justify-center mb-5">
-                  <resource.icon className="h-7 w-7 text-purple-600" />
+                <div className="w-14 h-14 rounded-lg bg-green-100 flex items-center justify-center mb-5">
+                  <resource.icon className="h-7 w-7 text-green-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-purple-600 mb-3">
+                <h3 className="text-xl font-semibold text-green-600 mb-3">
                   {resource.title}
                 </h3>
                 <p className="text-gray-600 mb-5">{resource.description}</p>
                 <Link
                   href="/blogs"
-                  className="inline-flex items-center text-gray-600 hover:text-purple-600 font-medium transition-colors"
+                  className="inline-flex items-center text-gray-600 hover:text-green-600 font-medium transition-colors"
                 >
-                  Learn more
+                  Explore resources
                   <svg
                     className="w-5 h-5 ml-1"
                     fill="none"
@@ -243,18 +238,22 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-900">
+
+      <section className="py-20 bg-green-50">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Join Us on the Journey
+          <h2 className="text-3xl font-bold text-green-800 mb-6">
+            Ready to Transform Your Plate?
           </h2>
-          <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-            Together, we can unplug and thrive. Start your digital detox journey
-            today and rediscover the beauty of living in the present moment.
+          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            Join our community of plant-based enthusiasts and discover the
+            vibrant health benefits today.
           </p>
-          <button className="bg-white text-purple-900 px-8 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors duration-300">
-            Get Started
-          </button>
+          <Link
+            href=""
+            className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-green-600 hover:bg-green-700 text-white font-semibold transition-colors duration-300"
+          >
+            Start Your Plant Journey
+          </Link>
         </div>
       </section>
     </main>
