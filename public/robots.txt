@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://theveganvibrance.com/
+Host: https://theveganvibrance.com
 
 # Sitemaps
 Sitemap: https://theveganvibrance.com/sitemap.xml
