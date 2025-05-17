@@ -1,8 +1,51 @@
+export const metadata = {
+  title: "How The Vegan Vibrance Uses Cookies on This Site | Cookie Policy",
+  description:
+    "Learn how The Vegan Vibrance uses cookies to enhance your Browse experience, analyze site traffic, and personalize content on this website. Understand your choices regarding cookie usage.",
+  openGraph: {
+    title: "How The Vegan Vibrance Uses Cookies on This Site | Cookie Policy",
+    description:
+      "Learn how The Vegan Vibrance uses cookies to enhance your Browse experience, analyze site traffic, and personalize content on this website. Understand your choices regarding cookie usage.",
+    images: [
+      {
+        url: "https://theveganvibrance.com/veganvibrance.png",
+        width: 800,
+        height: 600,
+        alt: "Veganvibrance Logo",
+      },
+    ],
+    siteName: "Veganvibrance",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How The Vegan Vibrance Uses Cookies on This Site | Cookie Policy",
+    description:
+      "Learn how The Vegan Vibrance uses cookies to enhance your Browse experience, analyze site traffic, and personalize content on this website. Understand your choices regarding cookie usage.",
+    images: [
+      {
+        url: "https://theveganvibrance.com/veganvibrance.png",
+        width: 800,
+        height: 600,
+        alt: "Veganvibrance Logo",
+      },
+    ],
+  },
+};
+
 export default function CookiesPolicy() {
   return (
-    <main className="py-12 min-h-screen px-4 sm:px-6 lg:px-12">
+    <article
+      lang="en"
+      id="cookies-policy"
+      className="py-12 min-h-screen px-4 sm:px-6 lg:px-12"
+    >
       <section className="relative py-16 sm:py-20">
-        <div className="absolute inset-0 bg-grid-white/[0.05]" />
+        <div
+          className="absolute inset-0 bg-grid-white/[0.05]"
+          aria-hidden="true"
+        />
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center mb-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
@@ -20,7 +63,7 @@ export default function CookiesPolicy() {
                 <p className="text-gray-600">
                   theveganvibrance.com (hereinafter referred to as "the Site,"
                   "we," "us," or "our") uses cookies and other similar
-                  technologies to enhance your browsing experience. This Cookie
+                  technologies to enhance your Browse experience. This Cookie
                   Policy explains what cookies are, how we use them, and your
                   choices regarding cookies.
                 </p>
@@ -200,7 +243,7 @@ export default function CookiesPolicy() {
                 <p className="text-gray-600">
                   We may update this Cookie Policy from time to time. We will
                   notify you of any changes by posting the new Cookie Policy on
-                  this page.   You are advised to review this Cookie Policy
+                  this page. You are advised to review this Cookie Policy
                   periodically for any changes.
                 </p>
               </div>
@@ -217,13 +260,26 @@ export default function CookiesPolicy() {
                   If you have any questions or concerns about these Terms and
                   Conditions, please contact us at:
                 </p>
-                <p className="mt-2 text-green-600">
-                  Email: support@theveganvibrance.com
+                <div className="mt-2 text-green-600">
+                  Email:{" "}
+                  <a
+                    href="mailto:support@theveganvibrance.com"
+                    className="hover:underline"
+                  >
+                    support@theveganvibrance.com
+                  </a>
                   <br />
                   Address: Alkapuri, Vadodara, Gujarat, India 390007.
                   <br />
-                  Contact: Available on theveganvibrance.com
-                </p>
+                  Contact: Available on{" "}
+                  <a
+                    href="https://theveganvibrance.com/contact"
+                    className="hover:underline"
+                    rel="noopener noreferrer"
+                  >
+                    theveganvibrance.com
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -243,6 +299,6 @@ export default function CookiesPolicy() {
           </div>
         </div>
       </section>
-    </main>
+    </article>
   );
 }

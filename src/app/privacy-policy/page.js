@@ -1,11 +1,60 @@
+export const metadata = {
+  title: "How We Protect Your Data | The Vegan Vibrance Privacy Policy",
+  description:
+    "Discover how The Vegan Vibrance collects, uses, and protects your data. Read our Privacy Policy to understand your rights and our commitment to your privacy.",
+  openGraph: {
+    title: "How We Protect Your Data | The Vegan Vibrance Privacy Policy",
+    description:
+      "Discover how The Vegan Vibrance collects, uses, and protects your data. Read our Privacy Policy to understand your rights and our commitment to your privacy.",
+    images: [
+      {
+        url: "https://theveganvibrance.com/veganvibrance.png",
+        width: 800,
+        height: 600,
+        alt: "Veganvibrance Logo",
+      },
+    ],
+    siteName: "Veganvibrance",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How We Protect Your Data | The Vegan Vibrance Privacy Policy",
+    description:
+      "Discover how The Vegan Vibrance collects, uses, and protects your data. Read our Privacy Policy to understand your rights and our commitment to your privacy.",
+    images: [
+      {
+        url: "https://theveganvibrance.com/veganvibrance.png",
+        width: 800,
+        height: 600,
+        alt: "Veganvibrance Logo",
+      },
+    ],
+  },
+};
+
 export default function PrivacyPolicy() {
   return (
-    <main className="py-12 min-h-screen px-4 sm:px-6 lg:px-12">
-      <section className="relative py-16 sm:py-20">
-        <div className="absolute inset-0 bg-grid-white/[0.05]" />
+    <article
+      lang="en"
+      id="privacy-policy"
+      className="py-12 min-h-screen px-4 sm:px-6 lg:px-12"
+    >
+      <section
+        className="relative py-16 sm:py-20"
+        aria-labelledby="privacy-policy-heading"
+      >
+        <div
+          className="absolute inset-0 bg-grid-white/[0.05]"
+          aria-hidden="true"
+        />
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
+            <h1
+              id="privacy-policy-heading"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900"
+            >
               Privacy Policy
             </h1>
           </div>
@@ -18,13 +67,13 @@ export default function PrivacyPolicy() {
               </div>
               <div className="p-6">
                 <p className="text-gray-600">
-                  Welcome to theveganvibrance.com (hereinafter referred to as "the
-                  Site," "we," "us," or "our"). We are committed to protecting
-                  your privacy and ensuring the security of your personal
-                  information. This Privacy Policy outlines how we collect, use,
-                  disclose, and safeguard your information when you visit our
-                  Site. By using theveganvibrance.com, you agree to the terms of
-                  this Privacy Policy.
+                  Welcome to theveganvibrance.com (hereinafter referred to as
+                  "the Site," "we," "us," or "our"). We are committed to
+                  protecting your privacy and ensuring the security of your
+                  personal information. This Privacy Policy outlines how we
+                  collect, use, disclose, and safeguard your information when
+                  you visit our Site. By using theveganvibrance.com, you agree
+                  to the terms of this Privacy Policy.
                 </p>
               </div>
             </div>
@@ -62,7 +111,7 @@ export default function PrivacyPolicy() {
                       We automatically collect certain non-personal information
                       when you visit our Site, including your IP address,
                       browser type, operating system, referring website, pages
-                      visited, and the dates and times of your visits.  {" "}
+                      visited, and the dates and times of your visits.
                     </li>
                     <li>
                       We may use cookies, web beacons, and other tracking
@@ -78,13 +127,20 @@ export default function PrivacyPolicy() {
                       When visitors leave comments on the site we collect the
                       data shown in the comments form, and also the visitor’s IP
                       address and browser user agent string to help spam
-                      detection.   An anonymized string created from your email
+                      detection. An anonymized string created from your email
                       address (also called a hash) may be provided to the
                       Gravatar service to see if you are using it. The Gravatar
-                      service privacy policy is available here:
-                      https://automattic.com/privacy/. After approval of your
-                      comment, your profile picture is visible to the public in
-                      the context of your comment.
+                      service privacy policy is available here:{" "}
+                      <a
+                        href="https://automattic.com/privacy/"
+                        className="text-emerald-600 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        https://automattic.com/privacy/
+                      </a>
+                      . After approval of your comment, your profile picture is
+                      visible to the public in the context of your comment.
                     </li>
                   </ul>
                 </div>
@@ -130,7 +186,6 @@ export default function PrivacyPolicy() {
                 <div className="space-y-4">
                   <ul className="list-disc list-inside text-gray-600 space-y-2">
                     <li>
-                      {" "}
                       We use cookies and similar tracking technologies to
                       enhance your experience on our Site. Cookies are small
                       data files stored on your device that allow us to
@@ -214,7 +269,7 @@ export default function PrivacyPolicy() {
                     <li>
                       However, no method of transmission over the internet or
                       electronic storage is 100% secure, and we cannot guarantee
-                      absolute security.  
+                      absolute security.
                     </li>
                   </ul>
                 </div>
@@ -303,7 +358,7 @@ export default function PrivacyPolicy() {
                       you have provided to us. You can also request that we
                       erase any personal data we hold about you. This does not
                       include any data we are obliged to keep for
-                      administrative, legal, or security purposes.{" "}
+                      administrative, legal, or security purposes.
                     </li>
                   </ul>
                   <ul className="list-disc list-inside text-gray-600 space-y-2">
@@ -328,7 +383,7 @@ export default function PrivacyPolicy() {
                     <li>
                       We may update this Privacy Policy from time to time. We
                       will notify you of any changes by posting the new Privacy
-                      Policy on this page.  
+                      Policy on this page.
                     </li>
                   </ul>
                   <ul className="list-disc list-inside text-gray-600 space-y-2">
@@ -352,11 +407,24 @@ export default function PrivacyPolicy() {
                   For any questions or concerns about this Privacy Policy,
                   please contact us:
                 </p>
-                <p className="mt-2 text-emerald-600">
-                  Email: support@theveganvibrance.com
+                <div className="mt-2 text-emerald-600">
+                  Email:{" "}
+                  <a
+                    href="mailto:support@theveganvibrance.com"
+                    className="hover:underline"
+                  >
+                    support@theveganvibrance.com
+                  </a>
                   <br />
-                  Contact: Available on theveganvibrance.com
-                </p>
+                  Contact: Available on{" "}
+                  <a
+                    href="https://theveganvibrance.com/contact"
+                    className="hover:underline"
+                    rel="noopener noreferrer"
+                  >
+                    theveganvibrance.com
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -395,6 +463,6 @@ export default function PrivacyPolicy() {
           </div>
         </div>
       </section>
-    </main>
+    </article>
   );
 }

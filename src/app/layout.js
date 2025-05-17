@@ -4,12 +4,45 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
+  title: "The Vegan Vibrance | Healthy, Delicious & Sustainable Vegan Recipes",
+  description:
+    "Your ultimate resource for vegan recipes, nutrition tips, and eco-conscious living. The Vegan Vibrance helps you live a healthier, more vibrant life.",
   icons: {
     icon: [
       { url: "/veganvibrance.png" },
       { url: "/veganvibrance.png", sizes: "32x32", type: "image/png" },
     ],
     apple: { url: "/veganvibrance.png", sizes: "180x180", type: "image/png" },
+  },
+  openGraph: {
+    title: "The Vegan Vibrance | Healthy, Delicious & Sustainable Vegan Recipes",
+    description:
+      "Your ultimate resource for vegan recipes, nutrition tips, and eco-conscious living. The Vegan Vibrance helps you live a healthier, more vibrant life.",
+    images: [
+      {
+        url: "https://theveganvibrance.com/veganvibrance.png",
+        width: 800,
+        height: 600,
+        alt: "Veganvibrance Logo",
+      },
+    ],
+    siteName: "Veganvibrance",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Vegan Vibrance | Healthy, Delicious & Sustainable Vegan Recipes",
+    description:
+      "Your ultimate resource for vegan recipes, nutrition tips, and eco-conscious living. The Vegan Vibrance helps you live a healthier, more vibrant life.",
+    images: [
+      {
+        url: "https://theveganvibrance.com/veganvibrance.png",
+        width: 800,
+        height: 600,
+        alt: "Veganvibrance Logo",
+      },
+    ],
   },
 };
 
