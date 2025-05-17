@@ -1,11 +1,60 @@
+export const metadata = {
+  title: "The Vegan Vibrance – Terms & Conditions You Should Know",
+  description:
+    "Review The Vegan Vibrance’s Terms & Conditions to understand the rules, user responsibilities, and legal guidelines for using our website and services.",
+  openGraph: {
+    title: "The Vegan Vibrance – Terms & Conditions You Should Know",
+    description:
+      "Review The Vegan Vibrance’s Terms & Conditions to understand the rules, user responsibilities, and legal guidelines for using our website and services.",
+    images: [
+      {
+        url: "https://theveganvibrance.com/veganvibrance.png",
+        width: 800,
+        height: 600,
+        alt: "Veganvibrance Logo",
+      },
+    ],
+    siteName: "Veganvibrance",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Vegan Vibrance – Terms & Conditions You Should Know",
+    description:
+      "Review The Vegan Vibrance’s Terms & Conditions to understand the rules, user responsibilities, and legal guidelines for using our website and services.",
+    images: [
+      {
+        url: "https://theveganvibrance.com/veganvibrance.png",
+        width: 800,
+        height: 600,
+        alt: "Veganvibrance Logo",
+      },
+    ],
+  },
+};
+
 export default function TermsAndConditions() {
   return (
-    <main className="py-12 min-h-screen px-4 sm:px-6 lg:px-12">
-      <section className="relative py-16 sm:py-20">
-        <div className="absolute inset-0 bg-grid-white/[0.05]" />
+    <article
+      lang="en"
+      id="terms-and-conditions"
+      className="py-12 min-h-screen px-4 sm:px-6 lg:px-12"
+    >
+      <section
+        className="relative py-16 sm:py-20"
+        aria-labelledby="terms-heading"
+      >
+        <div
+          className="absolute inset-0 bg-grid-white/[0.05]"
+          aria-hidden="true"
+        />
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
+            <h1
+              id="terms-heading"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900"
+            >
               Terms and Conditions
             </h1>
           </div>
@@ -304,13 +353,26 @@ export default function TermsAndConditions() {
                   If you have any questions or concerns about these Terms and
                   Conditions, please contact us at:
                 </p>
-                <p className="mt-2 text-emerald-600">
-                  Email: support@theveganvibrance.com
+                <div className="mt-2 text-emerald-600">
+                  Email:{" "}
+                  <a
+                    href="mailto:support@theveganvibrance.com"
+                    className="hover:underline"
+                  >
+                    support@theveganvibrance.com
+                  </a>
                   <br />
                   Address: Alkapuri, Vadodara, Gujarat, India 390007.
                   <br />
-                  Contact: Available on theveganvibrance.com
-                </p>
+                  Contact: Available on{" "}
+                  <a
+                    href="https://theveganvibrance.com/contact"
+                    className="hover:underline"
+                    rel="noopener noreferrer"
+                  >
+                    theveganvibrance.com
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -331,6 +393,6 @@ export default function TermsAndConditions() {
           </div>
         </div>
       </section>
-    </main>
+    </article>
   );
 }
