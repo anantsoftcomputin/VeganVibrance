@@ -1,34 +1,34 @@
 export const metadata = {
-  title: "Important Disclaimer Notice | The Vegan Vibrance",
+  title: "Important Disclaimer Notice | TheVeganVibrance",
   description:
-    "Read The Vegan Vibrance's Disclaimer to understand the limitations of our content, liability, and how users should interpret information on this site.",
+    "Read TheVeganVibrance's Disclaimer to understand the limitations of our content, liability, and how users should interpret information on this site.",
   openGraph: {
-    title: "Important Disclaimer Notice | The Vegan Vibrance",
+    title: "Important Disclaimer Notice | TheVeganVibrance",
     description:
-      "Read The Vegan Vibrance's Disclaimer to understand the limitations of our content, liability, and how users should interpret information on this site.",
+      "Read TheVeganVibrance's Disclaimer to understand the limitations of our content, liability, and how users should interpret information on this site.",
     images: [
       {
-        url: "https://theveganvibrance.com/veganvibrance.png",
+        url: "https://theveganvibrance.com/TheVeganVibrance.png",
         width: 800,
         height: 600,
-        alt: "Veganvibrance Logo",
+        alt: "TheVeganVibrance Logo",
       },
     ],
-    siteName: "Veganvibrance",
+    siteName: "TheVeganVibrance",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Important Disclaimer Notice | The Vegan Vibrance",
+    title: "Important Disclaimer Notice | TheVeganVibrance",
     description:
-      "Read The Vegan Vibrance's Disclaimer to understand the limitations of our content, liability, and how users should interpret information on this site.",
+      "Read TheVeganVibrance's Disclaimer to understand the limitations of our content, liability, and how users should interpret information on this site.",
     images: [
       {
-        url: "https://theveganvibrance.com/veganvibrance.png",
+        url: "https://theveganvibrance.com/TheVeganVibrance.png",
         width: 800,
         height: 600,
-        alt: "Veganvibrance Logo",
+        alt: "TheVeganVibrance Logo",
       },
     ],
   },

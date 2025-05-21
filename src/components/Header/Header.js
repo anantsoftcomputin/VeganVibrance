@@ -24,15 +24,15 @@ const Header = () => {
             <Link
               href="/"
               className="flex items-center space-x-2"
-              aria-label="Veganvibrance homepage"
+              aria-label="TheVeganVibrance homepage"
             >
               <img
-                src="/veganvibrance.png"
-                alt="Veganvibrance logo"
+                src="/TheVeganVibrance.png"
+                alt="TheVeganVibrance logo"
                 className="h-8 w-auto"
               />
               <span className="text-2xl font-bold text-green-700 transition-colors">
-                Veganvibrance
+                TheVeganVibrance
               </span>
             </Link>
           </div>

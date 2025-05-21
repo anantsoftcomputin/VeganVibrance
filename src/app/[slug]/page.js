@@ -30,7 +30,7 @@ export const generateMetadata = async ({ params }) => {
             height: 600,
           },
         ],
-        siteName: "Veganvibrance",
+        siteName: "TheVeganVibrance",
         locale: "en_US",
         type: "website",
       },
@@ -88,10 +88,10 @@ export default async function BlogDetail({ params }) {
       },
       publisher: {
         "@type": "Organization",
-        name: "Techsnostalgia",
+        name: "TheVeganVibrance",
         logo: {
           "@type": "ImageObject",
-          url: "https://theveganvibrance.com/veganvibrance.png",
+          url: "https://theveganvibrance.com/TheVeganVibrance.png",
         },
       },
       datePublished: blog?.published_at,

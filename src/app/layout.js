@@ -4,43 +4,47 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
-  title: "The Vegan Vibrance | Healthy, Delicious & Sustainable Vegan Recipes",
+  title: "Plant Based Vegan Recipes for Vibrant Life | TheVeganVibrance",
   description:
-    "Your ultimate resource for vegan recipes, nutrition tips, and eco-conscious living. The Vegan Vibrance helps you live a healthier, more vibrant life.",
+    "TheVeganVibrance offers easy plant based vegan recipes, nutrition tips to boost health and energy. Perfect for anyone looking to eat clean and live vibrant.",
   icons: {
     icon: [
-      { url: "/veganvibrance.png" },
-      { url: "/veganvibrance.png", sizes: "32x32", type: "image/png" },
+      { url: "/TheVeganVibrance.png" },
+      { url: "/TheVeganVibrance.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: { url: "/veganvibrance.png", sizes: "180x180", type: "image/png" },
+    apple: {
+      url: "/TheVeganVibrance.png",
+      sizes: "180x180",
+      type: "image/png",
+    },
   },
   openGraph: {
-    title: "The Vegan Vibrance | Healthy, Delicious & Sustainable Vegan Recipes",
+    title: "Plant Based Vegan Recipes for Vibrant Life | TheVeganVibrance",
     description:
-      "Your ultimate resource for vegan recipes, nutrition tips, and eco-conscious living. The Vegan Vibrance helps you live a healthier, more vibrant life.",
+      "TheVeganVibrance offers easy plant based vegan recipes, nutrition tips to boost health and energy. Perfect for anyone looking to eat clean and live vibrant.",
     images: [
       {
-        url: "https://theveganvibrance.com/veganvibrance.png",
+        url: "https://theveganvibrance.com/TheVeganVibrance.png",
         width: 800,
         height: 600,
-        alt: "Veganvibrance Logo",
+        alt: "TheVeganVibrance Logo",
       },
     ],
-    siteName: "Veganvibrance",
+    siteName: "TheVeganVibrance",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Vegan Vibrance | Healthy, Delicious & Sustainable Vegan Recipes",
+    title: "Plant Based Vegan Recipes for Vibrant Life | TheVeganVibrance",
     description:
-      "Your ultimate resource for vegan recipes, nutrition tips, and eco-conscious living. The Vegan Vibrance helps you live a healthier, more vibrant life.",
+      "TheVeganVibrance offers easy plant based vegan recipes, nutrition tips to boost health and energy. Perfect for anyone looking to eat clean and live vibrant.",
     images: [
       {
-        url: "https://theveganvibrance.com/veganvibrance.png",
+        url: "https://theveganvibrance.com/TheVeganVibrance.png",
         width: 800,
         height: 600,
-        alt: "Veganvibrance Logo",
+        alt: "TheVeganVibrance Logo",
       },
     ],
   },

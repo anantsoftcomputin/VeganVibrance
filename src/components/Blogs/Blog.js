@@ -412,7 +412,11 @@ export default function Blog() {
                   <div className="mt-auto">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-10 h-10 rounded-full border-2 border-green-100 flex items-center justify-center bg-green-100 text-green-600 font-semibold">
-                        {featuredBlog.author.full_name.charAt(0)}
+                        {featuredBlog.author.full_name.includes(" ")
+                          ? `${featuredBlog.author.full_name.split(" ")[0][0]}${
+                              featuredBlog.author.full_name.split(" ")[1][0]
+                            }`
+                          : featuredBlog.author.full_name.substring(0, 2)}
                       </div>
                       <div>
                         <p className="text-sm font-medium text-gray-900">
@@ -621,13 +625,15 @@ export default function Blog() {
                       <div className="mt-auto">
                         <div className="flex items-center gap-3 mb-3">
                           <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-green-100 flex items-center justify-center bg-green-100 text-green-600 font-semibold">
-                            {blog.author &&
-                              blog.author.full_name &&
-                              blog.author.full_name.charAt(0)}
+                            {blog.author.full_name.includes(" ")
+                              ? `${blog.author.full_name.split(" ")[0][0]}${
+                                  blog.author.full_name.split(" ")[1][0]
+                                }`
+                              : blog.author.full_name.substring(0, 2)}
                           </div>
                           <div>
                             <p className="text-xs sm:text-sm font-medium text-gray-900">
-                              {blog.author && blog.author.full_name}
+                              {blog.author.full_name}
                             </p>
                             <p className="text-xs sm:text-sm text-gray-500">
                               {moment(blog.published_at).format("ll")}

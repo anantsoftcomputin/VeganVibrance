@@ -1,34 +1,34 @@
 export const metadata = {
-  title: "How We Protect Your Data | The Vegan Vibrance Privacy Policy",
+  title: "How We Protect Your Data | TheVeganVibrance Privacy Policy",
   description:
-    "Discover how The Vegan Vibrance collects, uses, and protects your data. Read our Privacy Policy to understand your rights and our commitment to your privacy.",
+    "Discover how TheVeganVibrance collects, uses, and protects your data. Read our Privacy Policy to understand your rights and our commitment to your privacy.",
   openGraph: {
-    title: "How We Protect Your Data | The Vegan Vibrance Privacy Policy",
+    title: "How We Protect Your Data | TheVeganVibrance Privacy Policy",
     description:
-      "Discover how The Vegan Vibrance collects, uses, and protects your data. Read our Privacy Policy to understand your rights and our commitment to your privacy.",
+      "Discover how TheVeganVibrance collects, uses, and protects your data. Read our Privacy Policy to understand your rights and our commitment to your privacy.",
     images: [
       {
-        url: "https://theveganvibrance.com/veganvibrance.png",
+        url: "https://theveganvibrance.com/TheVeganVibrance.png",
         width: 800,
         height: 600,
-        alt: "Veganvibrance Logo",
+        alt: "TheVeganVibrance Logo",
       },
     ],
-    siteName: "Veganvibrance",
+    siteName: "TheVeganVibrance",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "How We Protect Your Data | The Vegan Vibrance Privacy Policy",
+    title: "How We Protect Your Data | TheVeganVibrance Privacy Policy",
     description:
-      "Discover how The Vegan Vibrance collects, uses, and protects your data. Read our Privacy Policy to understand your rights and our commitment to your privacy.",
+      "Discover how TheVeganVibrance collects, uses, and protects your data. Read our Privacy Policy to understand your rights and our commitment to your privacy.",
     images: [
       {
-        url: "https://theveganvibrance.com/veganvibrance.png",
+        url: "https://theveganvibrance.com/TheVeganVibrance.png",
         width: 800,
         height: 600,
-        alt: "Veganvibrance Logo",
+        alt: "TheVeganVibrance Logo",
       },
     ],
   },
