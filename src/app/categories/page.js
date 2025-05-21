@@ -8,13 +8,13 @@ export const metadata = {
       "Browse our collection of vegan recipes, from quick meals to gourmet dishes. Perfect for every occasion and skill level!",
     images: [
       {
-        url: "https://theveganvibrance.com/veganvibrance.png",
+        url: "https://theveganvibrance.com/TheVeganVibrance.png",
         width: 800,
         height: 600,
-        alt: "Veganvibrance Logo",
+        alt: "TheVeganVibrance Logo",
       },
     ],
-    siteName: "Veganvibrance",
+    siteName: "TheVeganVibrance",
     locale: "en_US",
     type: "website",
   },
@@ -25,10 +25,10 @@ export const metadata = {
       "Browse our collection of vegan recipes, from quick meals to gourmet dishes. Perfect for every occasion and skill level!",
     images: [
       {
-        url: "https://theveganvibrance.com/veganvibrance.png",
+        url: "https://theveganvibrance.com/TheVeganVibrance.png",
         width: 800,
         height: 600,
-        alt: "Veganvibrance Logo",
+        alt: "TheVeganVibrance Logo",
       },
     ],
   },

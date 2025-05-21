@@ -128,7 +128,11 @@ export default function BlogDetails({ slug }) {
                 <div className="flex items-center gap-3">
                   {blog.author?.full_name && (
                     <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-600 to-green-600 flex items-center justify-center text-white font-semibold">
-                      {blog.author.full_name.charAt(0)}
+                      {blog.author.full_name.includes(" ")
+                        ? `${blog.author.full_name.split(" ")[0][0]}${
+                            blog.author.full_name.split(" ")[1][0]
+                          }`
+                        : blog.author.full_name.substring(0, 2)}
                     </div>
                   )}
                   <div>
@@ -271,7 +275,11 @@ export default function BlogDetails({ slug }) {
                   </h3>
                   <div className="flex flex-col items-center text-center">
                     <div className="w-20 h-20 rounded-full bg-gradient-to-br from-green-600 to-green-600 flex items-center justify-center text-white text-2xl font-semibold mb-3">
-                      {blog.author.full_name.charAt(0)}
+                      {blog.author.full_name.includes(" ")
+                        ? `${blog.author.full_name.split(" ")[0][0]}${
+                            blog.author.full_name.split(" ")[1][0]
+                          }`
+                        : blog.author.full_name.substring(0, 2)}
                     </div>
                     <h4 className="text-xl font-semibold text-gray-900">
                       {blog.author.full_name}

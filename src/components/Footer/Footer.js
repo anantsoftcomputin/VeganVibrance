@@ -58,15 +58,15 @@ const Footer = () => {
             <Link
               href="/"
               className="flex items-center space-x-2 text-2xl font-bold"
-              aria-label="Veganvibrance homepage"
+              aria-label="TheVeganVibrance homepage"
             >
               <img
-                src="/veganvibrance.png"
-                alt="Veganvibrance logo"
+                src="/TheVeganVibrance.png"
+                alt="TheVeganVibrance logo"
                 className="h-8 w-auto"
               />
               <span className="text-xl font-bold md:inline-block ml-2">
-                Veganvibrance
+                TheVeganVibrance
               </span>
             </Link>
             <p className="mt-4 text-gray-600">
@@ -85,7 +85,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-green-600 transition-colors duration-200"
-                  aria-label={`Follow Veganvibrance on ${name}`}
+                  aria-label={`Follow TheVeganVibrance on ${name}`}
                   role="listitem"
                 >
                   <Icon className="h-6 w-6" aria-hidden="true" />
@@ -122,7 +122,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-green-200 pt-8 mt-8 text-center">
           <p className="text-gray-600 text-sm">
-            © {currentYear} Veganvibrance. All rights reserved | Design &
+            © {currentYear} TheVeganVibrance. All rights reserved | Design &
             Developed By{" "}
             <a
               href="https://anantsoftcomputing.com/"

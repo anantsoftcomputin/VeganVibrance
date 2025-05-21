@@ -27,13 +27,13 @@ export const generateMetadata = async ({ params }) => {
         description: category?.results[0]?.meta_description,
         images: [
           {
-            url: "https://theveganvibrance.com/veganvibrance.png",
+            url: "https://theveganvibrance.com/TheVeganVibrance.png",
             width: 800,
             height: 600,
-            alt: "Veganvibrance Logo",
+            alt: "TheVeganVibrance Logo",
           },
         ],
-        siteName: "Veganvibrance",
+        siteName: "TheVeganVibrance",
         locale: "en_US",
         type: "website",
       },
@@ -43,10 +43,10 @@ export const generateMetadata = async ({ params }) => {
         description: category?.results[0]?.meta_description,
         images: [
           {
-            url: "https://theveganvibrance.com/veganvibrance.png",
+            url: "https://theveganvibrance.com/TheVeganVibrance.png",
             width: 800,
             height: 600,
-            alt: "Veganvibrance Logo",
+            alt: "TheVeganVibrance Logo",
           },
         ],
       },
