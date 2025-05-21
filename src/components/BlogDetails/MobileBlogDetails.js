@@ -12,6 +12,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import moment from "moment";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import ajaxCall from "@/helpers/ajaxCall";
@@ -252,13 +253,16 @@ export default function BlogDetails({ slug }) {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {blog.tags.map((tag, index) => (
-                      <span
+                      <Link
                         key={index}
+                        href={`/tag/${tag.slug}`}
                         className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-white/80 text-green-600 text-sm font-medium hover:shadow-md transition-shadow"
+                        aria-label={`View all posts tagged ${tag.name}`}
+                        itemProp="keywords"
                       >
                         <Tag className="h-3 w-3" aria-hidden="true" />
                         {tag.name}
-                      </span>
+                      </Link>
                     ))}
                   </div>
                 </motion.div>

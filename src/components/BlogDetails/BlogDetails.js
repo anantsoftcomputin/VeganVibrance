@@ -21,6 +21,7 @@ import {
   XCircle,
 } from "lucide-react";
 import moment from "moment";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import ajaxCall from "@/helpers/ajaxCall";
 import RelatedArticles from "../RelatedArticles/RelatedArticles";
@@ -792,14 +793,16 @@ export default function BlogDetails({ slug }) {
               </h2>
               <div className="flex flex-wrap gap-2">
                 {blog.tags.map((tag, index) => (
-                  <span
+                  <Link
                     key={index}
+                    href={`/tag/${tag.slug}`}
                     className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-green-100 text-green-700 text-sm font-medium hover:shadow-md transition-shadow"
+                    aria-label={`View all posts tagged ${tag.name}`}
                     itemProp="keywords"
                   >
                     <Tag className="h-3 w-3" aria-hidden="true" />
                     {tag.name}
-                  </span>
+                  </Link>
                 ))}
               </div>
             </motion.div>

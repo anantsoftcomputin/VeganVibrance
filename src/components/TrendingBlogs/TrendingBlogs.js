@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import moment from "moment";
 import ajaxCall from "@/helpers/ajaxCall";
-import { TrendingUp, Clock, ArrowRight, BookCheck } from "lucide-react";
+import { TrendingUp, Clock, ArrowRight, BookCheck, Tag } from "lucide-react";
 
 const TrendingBlogs = () => {
   const [loading, setLoading] = useState(true);
@@ -115,8 +115,9 @@ const TrendingBlogs = () => {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
-                      <span className="px-3 py-1 sm:px-4 sm:py-2 bg-white/90 text-green-600 text-xs sm:text-sm font-medium rounded-full shadow-lg">
+                    <div className="absolute top-4 left-4">
+                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/90 text-green-600 text-sm font-medium">
+                        <Tag className="h-3 w-3" aria-hidden="true" />
                         {blog.category.name}
                       </span>
                     </div>
