@@ -24,13 +24,13 @@ const socialLinks = [
   {
     name: "Facebook",
     icon: Facebook,
-    href: "https://www.facebook.com/theveganvibrances",
+    href: "https://www.facebook.com/theveganvibrance",
   },
-  { name: "Twitter", icon: Twitter, href: "https://x.com/theveganvibrances" },
+  { name: "Twitter", icon: Twitter, href: "https://x.com/vegan_vibrance" },
   {
     name: "Instagram",
     icon: Instagram,
-    href: "https://www.instagram.com/theveganvibrances",
+    href: "https://www.instagram.com/veganthevibrance",
   },
 ];
 

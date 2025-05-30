@@ -11,9 +11,9 @@ export default function Home() {
     url: "https://theveganvibrance.com",
     logo: "https://theveganvibrance.com/TheVeganVibrance.png",
     sameAs: [
-      "https://www.facebook.com/theveganvibrances",
-      "https://www.instagram.com/theveganvibrances",
-      "https://x.com/theveganvibrances",
+      "https://www.facebook.com/theveganvibrance",
+      "https://www.instagram.com/veganthevibrance",
+      "https://x.com/vegan_vibrance",
     ],
     description:
       "TheVeganVibrance offers easy plant based vegan recipes, nutrition tips to boost health and energy. Perfect for anyone looking to eat clean and live vibrant.",
