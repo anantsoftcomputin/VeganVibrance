@@ -202,7 +202,7 @@ export default function BlogDetails({ slug }) {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://www.facebook.com/theveganvibrances"
+                    href="https://www.facebook.com/theveganvibrance"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex flex-col items-center justify-center p-3 rounded-lg bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2]/20 transition-colors"
@@ -214,7 +214,7 @@ export default function BlogDetails({ slug }) {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://x.com/theveganvibrances"
+                    href="https://x.com/vegan_vibrance"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex flex-col items-center justify-center p-3 rounded-lg bg-[#1DA1F2]/10 text-[#1DA1F2] hover:bg-[#1DA1F2]/20 transition-colors"
@@ -226,7 +226,7 @@ export default function BlogDetails({ slug }) {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://www.instagram.com/theveganvibrances"
+                    href="https://www.instagram.com/veganthevibrance"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex flex-col items-center justify-center p-3 rounded-lg bg-[#0A66C2]/10 text-[#0A66C2] hover:bg-[#0A66C2]/20 transition-colors"
