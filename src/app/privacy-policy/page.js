@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "How We Protect Your Data | TheVeganVibrance Privacy Policy",
   description:
@@ -407,23 +409,22 @@ export default function PrivacyPolicy() {
                   For any questions or concerns about this Privacy Policy,
                   please contact us:
                 </p>
-                <div className="mt-2 text-emerald-600">
+                <div className="mt-2 text-gray-600">
                   Email:{" "}
                   <a
                     href="mailto:support@theveganvibrance.com"
-                    className="hover:underline"
+                    className="text-green-600 hover:text-green-700 hover:underline"
                   >
                     support@theveganvibrance.com
                   </a>
                   <br />
                   Contact: Available on{" "}
-                  <a
-                    href="https://theveganvibrance.com/contact"
-                    className="hover:underline"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/contact-us"
+                    className="text-green-600 hover:text-green-700 hover:underline"
                   >
                     theveganvibrance.com
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

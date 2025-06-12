@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "How TheVeganVibrance Uses Cookies on This Site | Cookie Policy",
   description:
@@ -260,25 +262,24 @@ export default function CookiesPolicy() {
                   If you have any questions or concerns about these Terms and
                   Conditions, please contact us at:
                 </p>
-                <div className="mt-2 text-green-600">
+                <div className="mt-2 text-gray-600">
                   Email:{" "}
                   <a
                     href="mailto:support@theveganvibrance.com"
-                    className="hover:underline"
+                    className="text-green-600 hover:text-green-700 hover:underline"
                   >
                     support@theveganvibrance.com
                   </a>
                   <br />
-                  Address: Alkapuri, Vadodara, Gujarat, India 390007.
-                  <br />
                   Contact: Available on{" "}
-                  <a
-                    href="https://theveganvibrance.com/contact"
-                    className="hover:underline"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/contact-us"
+                    className="text-green-600 hover:text-green-700 hover:underline"
                   >
                     theveganvibrance.com
-                  </a>
+                  </Link>
+                  <br />
+                  Address: Alkapuri, Vadodara, Gujarat, India 390007.
                 </div>
               </div>
             </div>
