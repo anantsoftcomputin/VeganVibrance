@@ -15,7 +15,7 @@ import Link from "next/link";
 
 const stats = [
   {
-    id: "stat-1",
+    id: "stat-1-1",
     number: "25K+",
     label: "Plant-Powered Members",
     icon: <Leaf className="h-6 w-6 text-green-600" aria-hidden="true" />,
